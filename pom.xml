@@ -3,12 +3,13 @@
   <groupId>com.naresh</groupId>
   <artifactId>aws-build-sample-maven-project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-</project>
 
-<distributionManagement>
-  <repository>
-    <id>java-teste-maven</id>
-    <name>java-teste-maven</name>
-    <url>https://java-431591413306.d.codeartifact.us-east-1.amazonaws.com/maven/teste-maven/</url>
-  </repository>
-</distributionManagement>
+  <distributionManagement>
+    <repository>
+      <id>java-teste-maven</id>
+      <name>java-teste-maven</name>
+      <url>https://java-431591413306.d.codeartifact.us-east-1.amazonaws.com/maven/teste-maven/</url>
+    </repository>
+  </distributionManagement>
+
+</project>

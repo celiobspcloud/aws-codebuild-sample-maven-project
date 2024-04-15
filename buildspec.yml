@@ -4,7 +4,6 @@ phases:
   pre_build:
     commands:
       - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain java --domain-owner 431591413306 --query authorizationToken --output text --region us-east-1`
-      - aws s3 ls
       - aws codeartifact get-repository-endpoint --domain java --repository teste-maven --format maven --region us-east-1
   build:
     commands:

@@ -1,5 +1,4 @@
 <settings>
-...
     <servers>
         <server>
             <id>codeartifact</id>
@@ -22,5 +21,4 @@
     <activeProfiles>
         <activeProfile>default</activeProfile>
     </activeProfiles>
-...
 </settings>

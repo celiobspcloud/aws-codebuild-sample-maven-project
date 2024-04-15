@@ -3,6 +3,7 @@ version: 0.1
 phases:
   pre_build:
     commands:
+      - ls -lha
       - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain java --domain-owner 431591413306 --query authorizationToken --output text --region us-east-1`
       - aws codeartifact get-repository-endpoint --domain java --repository teste-maven --format maven --region us-east-1
   build:
@@ -16,4 +17,4 @@ phases:
 artifacts:
   files:
     - target/aws-build-sample-maven-project-0.0.1-SNAPSHOT.jar
-    
+

@@ -12,4 +12,13 @@
     </repository>
   </distributionManagement>
 
+
+      <repositories>
+        <repository>
+            <id>codeartifact</id>
+            <name>codeartifact</name>
+            <url>https://java-431591413306.d.codeartifact.us-east-1.amazonaws.com/maven/teste-maven/</url>
+        </repository>
+    </repositories>
+
 </project>

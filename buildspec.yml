@@ -3,7 +3,9 @@ version: 0.1
 phases:
   pre_build:
     commands:
+      - - cp ./settings.xml /root/.m2/settings.xml
       - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain java --domain-owner 431591413306 --query authorizationToken --output text --region us-east-1`
+      - aws s3 ls
       - aws codeartifact get-repository-endpoint --domain java --repository teste-maven --format maven
   build:
     commands:

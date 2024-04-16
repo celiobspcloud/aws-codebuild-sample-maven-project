@@ -10,6 +10,8 @@ phases:
       - tar xzvf apache-maven-3.3.9-bin.tar.gz -C /opt/
       - export PATH=/opt/apache-maven-3.3.9/bin:$PATH
       - cp ./settings.xml /root/.m2/settings.xml
+      - export M2_HOME=/opt/apache-maven-3.3.9
+      - export PATH=${M2_HOME}/bin:${PATH}
   pre_build:
     commands:
       - ls -lha

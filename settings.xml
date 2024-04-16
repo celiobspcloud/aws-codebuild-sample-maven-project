@@ -14,6 +14,22 @@
     <profiles>
         <profile>
             <id>java-teste-maven</id>
+
+<pluginRepositories>
+       <pluginRepository>
+         <id>central-plugins</id>
+         <name>Central Plugins</name>
+         <url>https://repo.maven.apache.org/maven2/</url>
+         <releases>
+             <enabled>true</enabled>
+         </releases>
+         <snapshots>
+             <enabled>true</enabled>
+         </snapshots>
+       </pluginRepository>
+     </pluginRepositories>
+
+                  
             <repositories>
                 <repository>
                     <id>java-teste-maven</id>
@@ -25,4 +41,15 @@
     <activeProfiles>
         <activeProfile>java-teste-maven</activeProfile>
     </activeProfiles>
+
+    <mirrors>
+      <mirror>
+        <id>central-mirror</id>
+        <name>CodeArtifact Maven Central mirror</name>
+        <url>https://java-431591413306.d.codeartifact.us-east-1.amazonaws.com/maven/teste-maven/</url>
+        <mirrorOf>central</mirrorOf>
+      </mirror>
+    </mirrors>
+
+          
 </settings>

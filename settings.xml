@@ -1,7 +1,11 @@
-<settings>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 https://maven.apache.org/xsd/settings-1.2.0.xsd">
     <servers>
         <server>
-            <id>codeartifact</id>
+            <id>java-teste-maven</id>
             <username>aws</username>
             <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
         </server>
@@ -9,10 +13,10 @@
 
     <profiles>
         <profile>
-            <id>awscodeartifact</id>
+            <id>java-teste-maven</id>
             <repositories>
                 <repository>
-                    <id>codeartifact</id>
+                    <id>java-teste-maven</id>
                     <url>https://java-431591413306.d.codeartifact.us-east-1.amazonaws.com/maven/teste-maven/</url>
                 </repository>
             </repositories>

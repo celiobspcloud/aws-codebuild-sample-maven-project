@@ -4,7 +4,7 @@ phases:
   install:
     runtime-versions:
       java: corretto11 
-    #commands:
+    commands:
       - echo Etapa instalação...
       - wget https://jcenter.bintray.com/org/apache/maven/apache-maven/3.3.9/apache-maven-3.3.9-bin.tar.gz 
       - tar xzvf apache-maven-3.3.9-bin.tar.gz -C /opt/

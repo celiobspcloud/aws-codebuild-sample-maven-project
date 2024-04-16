@@ -25,7 +25,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      #- mvn deploy
+      - mvn deploy
 artifacts:
   files:
     - target/aws-build-sample-maven-project-0.0.1-SNAPSHOT.jar

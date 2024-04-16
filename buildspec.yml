@@ -1,17 +1,17 @@
 version: 0.2
 
 phases:
-  #install:
-    #runtime-versions:
-      #java: corretto11 
+  install:
+    runtime-versions:
+      java: corretto11 
     #commands:
-     # - echo Etapa instalação...
-     # - wget https://jcenter.bintray.com/org/apache/maven/apache-maven/3.3.9/apache-maven-3.3.9-bin.tar.gz 
-     # - tar xzvf apache-maven-3.3.9-bin.tar.gz -C /opt/
-     # - export PATH=/opt/apache-maven-3.3.9/bin:$PATH
-     # - cp ./settings.xml /root/.m2/settings.xml
-     # - export M2_HOME=/opt/apache-maven-3.3.9
-     # - export PATH=${M2_HOME}/bin:${PATH}
+      - echo Etapa instalação...
+      - wget https://jcenter.bintray.com/org/apache/maven/apache-maven/3.3.9/apache-maven-3.3.9-bin.tar.gz 
+      - tar xzvf apache-maven-3.3.9-bin.tar.gz -C /opt/
+      - export PATH=/opt/apache-maven-3.3.9/bin:$PATH
+      - cp ./settings.xml /root/.m2/settings.xml
+      - export M2_HOME=/opt/apache-maven-3.3.9
+      - export PATH=${M2_HOME}/bin:${PATH}
   pre_build:
     commands:
       - ls -lha
@@ -25,7 +25,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - mvn deploy
+      #- mvn deploy
 artifacts:
   files:
     - target/aws-build-sample-maven-project-0.0.1-SNAPSHOT.jar

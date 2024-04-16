@@ -23,6 +23,6 @@
         </profile>
     </profiles>
     <activeProfiles>
-        <activeProfile>awscodeartifact</activeProfile>
+        <activeProfile>java-teste-maven</activeProfile>
     </activeProfiles>
 </settings>
